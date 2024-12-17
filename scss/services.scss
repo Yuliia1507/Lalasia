@@ -77,13 +77,13 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 	// .service__item
 
 	&__item {
-					opacity: 0;
-	transform: translateY(20px);
-	transition: all 0.3s;
-	&.visible {
-		opacity: 1;
-		transform: translateY(0);
-	}
+		opacity: 0;
+		transform: translateY(20px);
+		transition: all 0.3s;
+		&.visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 }
 .item-service {
@@ -144,13 +144,13 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 	}
 	&__right {
 		max-width: toRem(530);
-					opacity: 0;
-	transform: translateX(20px);
-	transition: all 0.3s;
-	&.visible {
-		opacity: 1;
-		transform: translateX(0);
-	}
+		opacity: 0;
+		transform: translateX(20px);
+		transition: all 0.5s;
+		&.visible {
+			opacity: 1;
+			transform: translateX(0);
+		}
 	}
 	&__text {
 		margin-bottom: toRem(20);
@@ -193,14 +193,14 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 			grid-template-rows: auto;
 		}
 	}
-	&__item{
-					opacity: 0;
-	transform: translateY(20px);
-	transition: all 0.3s;
-	&.visible {
-		opacity: 1;
-		transform: translateY(0);
-	}
+	&__item {
+		opacity: 0;
+		transform: translateY(20px);
+		transition: all 0.5s;
+		&.visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 }
 
@@ -225,12 +225,10 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 		pointer-events: none;
 		z-index: 2;
 	}
-	@media(any-hover:hover){
-		&:hover::after{
-			
-				visibility: visible;
-				opacity: 1;
-			
+	@media (any-hover: hover) {
+		&:hover::after {
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 	@media (max-width: toEm(780)) {

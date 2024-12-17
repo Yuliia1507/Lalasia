@@ -106,7 +106,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 		flex-direction: column;
 		opacity: 0;
 		transform: translateY(20px);
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&.visible {
 			opacity: 1;
 			transform: translateY(0);
@@ -169,7 +169,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 		@include adaptiveValue("gap", 20, 14);
 		opacity: 0;
 		transform: translateY(20px);
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&.visible {
 			opacity: 1;
 			transform: translateY(0);

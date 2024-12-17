@@ -610,7 +610,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				observer.unobserve(entry.target);
 			}
 		});
-	}, { threshold: 0.3 });
+	}, { threshold: 0.2 });
 
 	hiddenElements.forEach(element => {
 		observer.observe(element);

@@ -413,8 +413,8 @@ body {
 	opacity: 0;
 	transform: translateY(20px);
 	transition:
-		opacity 0.3s ease-out,
-		transform 0.3s ease-out;
+		opacity 1s ease-out,
+		transform 1s ease-out;
 }
 
 .label.visible,
@@ -561,7 +561,7 @@ body {
 		max-width: toRem(505);
 		opacity: 0;
 		transform: translateX(20px);
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&.visible {
 			opacity: 1;
 			transform: translateX(0);
@@ -582,7 +582,7 @@ body {
 		flex: 0 1 calc(33.333% - toRem(29));
 		opacity: 0;
 		transform: translateY(20px);
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&.visible {
 			opacity: 1;
 			transform: translateY(0);
@@ -955,7 +955,7 @@ body {
 		max-width: toRem(595);
 		height: auto;
 		opacity: 0;
-		transition: all 0.3s;
+		transition: opacity 0.5s;
 		&.visible {
 			opacity: 1;
 		}
@@ -975,7 +975,7 @@ body {
 		max-width: toRem(595);
 		height: auto;
 		opacity: 0;
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&.visible {
 			opacity: 1;
 		}
@@ -1282,7 +1282,7 @@ body {
 		@include adaptiveValue("gap", 26, 14);
 		opacity: 0;
 		transform: translateX(20px);
-		transition: all 0.3s;
+		transition: all 0.5s;
 		&.visible {
 			opacity: 1;
 			transform: translateX(0);
@@ -1389,7 +1389,7 @@ body {
 		}
 		img {
 			will-change: transform;
-			transition: transform 0.3s;
+			transition: transform 3s;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
