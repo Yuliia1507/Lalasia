@@ -890,7 +890,7 @@ textarea {
           justify-content: space-between;
   gap: 0.625rem;
 }
-@media (max-width: 30em) {
+@media (max-width: 47.99875em) {
   .total-product__header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1243,14 +1243,19 @@ textarea {
   width: fit-content;
   text-wrap: nowrap;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 120%;
+  left: -1.75rem;
   display: none;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 0.0625rem solid #ccc;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+}
+@media (max-width: 47.99875em) {
+  .sort-by__dropdown {
+    left: 0;
+  }
 }
 .sort-by__dropdown li {
   padding: 0.625rem;

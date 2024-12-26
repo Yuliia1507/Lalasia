@@ -284,7 +284,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 		align-items: center;
 		justify-content: space-between;
 		gap: toRem(10);
-		@media (max-width: toEm(480)) {
+		@media (max-width: toEm(767.98)) {
 			flex-direction: column;
 			align-items: baseline;
 		}
@@ -379,13 +379,16 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 		width: fit-content;
 		text-wrap: nowrap;
 		position: absolute;
-		top: 100%;
-		left: 0;
+		top: 120%;
+		left: toRem(-28);
 		display: none;
 		background-color: #fff;
-		border: 1px solid #ccc;
+		border: toRem(1) solid #ccc;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 		z-index: 1000;
+		@media(max-width: toEm(767.98)){
+			left: 0;
+		}
 
 		li {
 			padding: toRem(10);
