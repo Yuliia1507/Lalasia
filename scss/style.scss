@@ -141,10 +141,10 @@ body {
 	&__body {
 		@media (max-width: toEm(960)) {
 			position: absolute;
-			min-width: 280px;
-			padding: 30px;
-			top: 50px;
-			right: -210px;
+			min-width: toRem(280);
+			padding: toRem(30);
+			@include adaptiveValue("top",120,50);
+			right: toRem(-210);
 			backdrop-filter: blur(10px);
 			background: rgba(255, 255, 255, 0.2);
 			transform: translateX(100%);
