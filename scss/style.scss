@@ -1051,6 +1051,9 @@ body {
 	}
 	&__title {
 		text-align: center;
+			&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 30, 18);
+		}
 	}
 	&__text {
 		max-width: toRem(656);
